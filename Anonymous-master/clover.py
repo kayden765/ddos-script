@@ -56,8 +56,8 @@ class Thread1(threading.Thread):
 					s = socket.socket(socket.AF_INET, socket.SOCK_STREAM, socket.SOL_TCP)
 					s.connect((self.blog_cleaned1, 80))
 					s.send(request)
-					print self.blog_cleaned1+" connect " + self.url
+					print ('self.blog_cleaned1+" connect " + self.url')
 				except:
-					print 'Error'
+					print ('Error')
 					ok = 0
 main()
